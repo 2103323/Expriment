@@ -4,12 +4,12 @@ export interface IEvent extends Document {
     _id: string;
     name: string;
     email: string;
-    category?:{_id:string,name:string}
+    category:{_id:string,name:string}
     description: string;
     
   }
 
-const ContactSchema = new Schema({
+const ContactUs = new Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
     category:{type:Schema.Types.ObjectId,ref:'Category'},
@@ -17,6 +17,6 @@ const ContactSchema = new Schema({
     
   })
   
-  const Contact = models.Event || model('ContactUs', ContactSchema);
+  const Event = models.Event || model('ContactUs', ContactUs);
   
-  export default Contact;
+  export default Event;

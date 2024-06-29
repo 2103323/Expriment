@@ -7,20 +7,20 @@ import { Button } from "@/components/ui/button";
 // import { SearchParamProps } from '@/types';
 import React from "react";
 // import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-
+// import "./app.module.css";
 import Image from "next/image";
-// import { MarqueeDemo } from "@/components/shared/MarqueeDemo";
+import { MarqueeDemo } from "@/components/shared/MarqueeDemo";
 // import * as React from "react"
-// import { InstapaperShareButton, InstagramIcon } from "next-share";
+import { InstapaperShareButton, InstagramIcon } from "next-share";
 // import { Button } from "@/components/ui/button"
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 // import { Input } from "@/components/ui/input";
 // import { Label } from "@/components/ui/label";
 // import {
@@ -32,7 +32,7 @@ import Image from "next/image";
 // } from "@/components/ui/select";
 import Link from "next/link";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
-// import CheckoutButton from "@/components/shared/CheckoutButton";
+import CheckoutButton from "@/components/shared/CheckoutButton";
 
 // import { Description } from "@radix-ui/react-dialog";
 
@@ -68,24 +68,24 @@ export default async function Home() {
           />
         </div>
       </section>
-      {/* <SignedOut>
+      <SignedOut>
         <section>
           <MarqueeDemo />
         </section>
-      </SignedOut> */}
+      </SignedOut>
 
       <section
         id="events"
         className="wrapper my-8 flex flex-col gap-8 md:gap-12"
       >
-        {/* <SignedIn>
+        <SignedIn>
           <h2 className="h2-bold">Services Catalogue</h2>
           <div className="gap-2 grid lg:grid-cols-4 sm:grid-cols-2">
             <Card className="py-4">
               <CardHeader>
                 <CardTitle>Housewarming</CardTitle>
                 <CardDescription>
-                  
+                  {/* <p>{item.description}</p> */}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -105,7 +105,7 @@ export default async function Home() {
               <CardHeader>
                 <CardTitle>Traditional Events</CardTitle>
                 <CardDescription>
-                 
+                  {/* <p>{item.description}</p> */}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -125,7 +125,7 @@ export default async function Home() {
               <CardHeader>
                 <CardTitle>Baby Shower</CardTitle>
                 <CardDescription>
-                  
+                  {/* <p>{item.description}</p> */}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -145,7 +145,7 @@ export default async function Home() {
               <CardHeader>
                 <CardTitle>Birthdays</CardTitle>
                 <CardDescription>
-                
+                  {/* <p>{item.description}</p> */}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -162,14 +162,14 @@ export default async function Home() {
               </CardFooter>
             </Card>
           </div>
-        </SignedIn> */}
+        </SignedIn>
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           <h2 style={{ fontWeight: "bold", marginBottom: "20px" }}>
             Connect with us
           </h2>
           <div style={{ display: "inline-block" }}>
             <a href={"https://www.instagram.com/dream_decor_usa/"}>
-              {/* <InstagramIcon size={32} round /> */}
+              <InstagramIcon size={32} round />
             </a>
           </div>
         </div>
